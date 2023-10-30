@@ -1,0 +1,244 @@
+
+
+.grid-container{
+    grid-template-columns: 320px 1fr;
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "grid-item-left grid-item-portfolio";
+    height: 100vh;
+}
+
+.grid-item-left{
+    grid-area: grid-item-left;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 320px;
+    border-right: 15px solid #efefef;
+}
+.grid-item-portfolio{
+    grid-area: grid-item-portfolio;
+}
+
+.grid-item-left .grid-left-templates {
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.grid-container .top-nav-bar{
+    display: none;
+}
+
+.grid-left-templates .grid-left-template {
+    
+}
+
+.grid-left-templates .grid-left-template .profil{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.profil, .infos, .menu-nav {
+    text-align: center;
+}
+.grid-left-templates .profil{
+
+}
+.grid-left-templates .menu{
+    justify-self: center;
+}
+.grid-item-left .grid-left-templates .social-icon{
+
+    justify-self: center;
+}
+.profil-picture img{
+    padding-top: 15px;
+    width: 150px;
+    border-radius: 50%;
+}
+.infos .author-name{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.infos .author-profession{
+    padding-top: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.menu .menu-nav{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+   cursor: pointer;
+   /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 33%); */
+ 
+}
+.menu .menu-nav li{
+    
+    flex: 1;
+    font-weight: bold;
+    font-size: 1rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding-top: 13px;
+    
+}
+.menu .menu-nav li:hover{
+   border-right: 3px solid rgb(186, 186, 21);
+   background-color: #efefef;
+
+}
+
+.grid-item-left .grid-left-templates .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.social-icon .google-icon {
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    padding: 10px;
+}
+.social-icon .facebook-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+}
+.social-icon .x-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 13px;
+}
+.social-icon .x-icon:hover,
+.social-icon .google-icon:hover,
+.social-icon .facebook-icon:hover {
+    background-color: gray;
+    font-size: 17px;
+}
+
+/* PORTFOLIO */
+.grid-item-portfolio{
+    grid-area: grid-item-portfolio;
+}
+.grid-item-left{
+    grid-area: grid-item-left;
+}
+
+.grid-item-portfolio{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 50px 50px 1fr;
+    row-gap: 50px;
+}
+.grid-item-portfolio .portfolio-container{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    width: 310px;
+}
+.portfolio-container .portfolio-title-container{
+    background-color: #FFEF20;
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.portfolio-title-container .portfolio-title{
+    background-color: #FFEF20;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.portfolio-container .show-works{
+    padding-left: 10px;
+    color: gray;
+}
+
+
+.grid-item-portfolio .menu-container{
+   /* background-color: blueviolet; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   color: gray;
+}
+
+.menu-container .portfolio-all{
+    background-color: #FFEF20;
+   padding: 10px 8px; 
+}
+.menu-container .portfolio-all:hover{
+   background-color: #FFEF20;
+   cursor: pointer;  
+}
+.menu-container .portfolio-media{
+   padding: 10px 15px;
+
+   
+}
+.menu-container .portfolio-media:hover{
+   background-color: #FFEF20;
+   cursor: pointer;
+}
+
+.menu-container .portfilio-illustration{
+   padding: 10px 15px;
+}
+.menu-container .portfilio-illustration:hover{
+   background-color: #FFEF20;
+   cursor: pointer;
+}
+.menu-container .portfolio-video{
+   padding: 10px 15px;
+}
+.menu-container .portfolio-video:hover{
+   background-color: #FFEF20;
+   cursor: pointer; 
+}
+
+
+
+/* ********project**************** */
+.grid-item-portfolio .project-container{
+    /* background-color: brown; */
+    
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+.project-container  img{
+    width: 250px;
+    height: 250px;
+}
+
+
+

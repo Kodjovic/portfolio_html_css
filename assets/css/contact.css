@@ -1,0 +1,381 @@
+
+.grid-container{
+    grid-template-columns: 320px 1fr;
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "grid-item-left grid-item-contact";
+    height: 100vh;
+}
+.grid-item-contact{
+    grid-area: grid-item-contact;
+}
+
+.grid-item-left{
+    grid-area: grid-item-left;
+}
+
+
+
+.grid-item-left{
+    grid-area: grid-item-left;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 320px;
+    border-right: 15px solid #efefef;
+}
+.grid-item-portfolio{
+    grid-area: grid-item-portfolio;
+}
+
+.grid-item-left .grid-left-templates {
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.grid-container .top-nav-bar{
+    display: none;
+}
+
+.grid-left-templates .grid-left-template {
+    
+}
+
+.grid-left-templates .grid-left-template .profil{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.profil, .infos, .menu-nav {
+    text-align: center;
+}
+.grid-left-templates .profil{
+
+}
+.grid-left-templates .menu{
+    justify-self: center;
+}
+.grid-item-left .grid-left-templates .social-icon{
+
+    justify-self: center;
+}
+.profil-picture img{
+    padding-top: 15px;
+    width: 150px;
+    border-radius: 50%;
+}
+.infos .author-name{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.infos .author-profession{
+    padding-top: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.menu .menu-nav{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+   cursor: pointer;
+   /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 33%); */
+ 
+}
+.menu .menu-nav li{
+    
+    flex: 1;
+    font-weight: bold;
+    font-size: 1rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding-top: 13px;
+    
+}
+.menu .menu-nav li:hover{
+   border-right: 3px solid rgb(186, 186, 21);
+   background-color: #efefef;
+
+}
+
+.grid-item-left .grid-left-templates .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.social-icon .google-icon {
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    padding: 10px;
+}
+.social-icon .facebook-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+}
+.social-icon .x-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 13px;
+}
+.social-icon .x-icon:hover,
+.social-icon .google-icon:hover,
+.social-icon .facebook-icon:hover {
+    background-color: gray;
+    font-size: 17px;
+}
+
+.grid-item-contact{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    row-gap: 50px;
+}
+.grid-item-contact .contact-container{
+    display: flex;
+    align-items: center;
+    width: 310px;
+}
+.contact-container .contact-title-container{
+    display: flex;
+    align-items: center;
+    width: 310px;
+}
+.contact-title-container .contact-title{
+    background-color: #FFEF20;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+}
+.contact-container .show-works-contact{
+    width: 150px;
+    color: gray;
+}
+
+/* ****************Contact************ */
+
+.contact-details{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    height: 100vh;
+    justify-content: center;
+}
+.contact-details .contact-infos-container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 20px;
+}
+.contact-infos-container .get-in-touch{
+    font-weight: bold;
+    flex: 25px;
+    font-size: 23px;
+    width: 140px;
+    border-bottom: 2px solid #FFEF20;
+
+}
+.contact-infos-container .touch-info{
+    /* background-color: rgb(122, 185, 27); */
+    flex: 130px;
+    color: gray;
+    font-size: 15px;
+    line-height: 25px;
+    width: 90%;
+}
+.contact-infos-container .residence-info{
+    /* background-color: rgb(238, 121, 26); */
+    flex: 300px;
+}
+
+
+.contact-details .contact-form-container{
+    background-color: aquamarine;
+    /* flex: 300px; */
+}
+
+/* **********************************Email************ */
+
+.contact-infos-container .residence-info{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.residence-info .location-item,
+.residence-info .personal-email,
+.residence-info .personal-contact,
+.residence-info .freelance-available{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.residence-info i{
+
+    font-size: 25px;
+    color: gray;
+    
+}
+
+/* *****************Contact form************ */
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 450px;
+    width: 300px;
+    justify-content: center;
+}
+.form-container .contact-form-block{
+    font-weight: bold;
+    font-size: 23px;
+    width: 150px;
+    border-bottom: 2px solid #FFEF20;
+}
+
+.form-container .full-name-container,
+.form-container .email-address-container{
+    flex: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    position: relative;
+}
+
+.form-container .message-template-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    position: relative;
+}
+
+.form-container .full-name-container input,
+.form-container .email-address-container input{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+    width: 300px;
+    height: 30px;
+    outline: none;
+}
+.form-container .message-template-container input{
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+    width: 275px;
+    height: 100px;
+    outline: none;
+    
+    
+    
+}
+
+.form-container .full-name-container i,
+.form-container .email-address-container i,
+.form-container .message-template-container i{
+    position: absolute;
+    top: 5;
+    right: 5px;
+    padding-right: 15px;
+}
+/* .form-container .email-address-container{
+    flex: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+
+} */
+/* .form-container .message-template-container{
+    flex: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+
+} */
+.form-container .authentification-container{
+    flex: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-container .authentification-container i{
+    color: gray;
+    font-size: 30px;
+    cursor: pointer;
+}
+.form-container .authentification-container .authentification-template{
+    font-size: 16px;
+}
+.form-container .send-message-container button{
+    display: flex;
+    width: 150px;
+    border: 2px solid #FFEF20;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.contact-form-block .contact-form{
+    
+}
+
+.full-name-container .full-name{
+    
+}
+.full-name-container i{
+
+}
+
+.email-address-container .email-address{
+    
+}
+.email-address-container i{
+
+}
+.message-template-container .message-template{
+    
+}
+.message-template-container i{
+
+}

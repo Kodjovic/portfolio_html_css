@@ -1,0 +1,370 @@
+
+.grid-container{
+    grid-template-columns: 320px 1fr;
+    justify-content: space-between;
+    display: grid;
+    
+    grid-template-areas: "grid-item-left grid-item-resume";
+    height: 100vh;
+}
+
+.grid-item-left{
+    grid-area: grid-item-left;
+}
+.grid-item-resume{
+    grid-area: grid-item-resume;
+    width: 100%;
+    
+}
+
+
+.grid-item-left{
+    grid-area: grid-item-left;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 320px;
+    border-right: 15px solid #efefef;
+}
+.grid-item-portfolio{
+    grid-area: grid-item-portfolio;
+}
+
+.grid-item-left .grid-left-templates {
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.grid-container .top-nav-bar{
+    display: none;
+}
+
+.grid-left-templates .grid-left-template {
+    
+}
+
+.grid-left-templates .grid-left-template .profil{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.profil, .infos, .menu-nav {
+    text-align: center;
+}
+.grid-left-templates .profil{
+
+}
+.grid-left-templates .menu{
+    justify-self: center;
+}
+.grid-item-left .grid-left-templates .social-icon{
+
+    justify-self: center;
+}
+.profil-picture img{
+    padding-top: 15px;
+    width: 150px;
+    border-radius: 50%;
+}
+.infos .author-name{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.infos .author-profession{
+    padding-top: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.menu .menu-nav{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+   cursor: pointer;
+   /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 33%); */
+ 
+}
+.menu .menu-nav li{
+    
+    flex: 1;
+    font-weight: bold;
+    font-size: 1rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding-top: 13px;
+    
+}
+.menu .menu-nav li:hover{
+   border-right: 3px solid rgb(186, 186, 21);
+   background-color: #efefef;
+
+}
+
+.grid-item-left .grid-left-templates .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.social-icon .google-icon {
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    padding: 10px;
+}
+.social-icon .facebook-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+}
+.social-icon .x-icon{
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    padding: 10px 13px;
+}
+.social-icon .x-icon:hover,
+.social-icon .google-icon:hover,
+.social-icon .facebook-icon:hover {
+    background-color: gray;
+    font-size: 17px;
+}
+
+.grid-item-resume .resume-banner{
+    display: flex;
+    text-align: center;
+    height: 50px;
+    gap: 15px;
+    margin-top: 30px;
+    
+}
+
+
+.resume-banner .resume-title{
+    background-color: #FFEF20;
+   color: #ffff;
+   display: flex;
+   padding-left: 60px;
+   padding-right: 15px;
+   align-items: center;
+   font-size: 1.2rem;
+   text-align: center;
+
+}
+.resume-banner .years-experience{
+    color: #adb5bd;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+
+}
+
+/* *************************EDUCATION RESUME************ */
+
+.dev-educations {
+    display: grid;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 50px;
+    /* row-gap: 50px; */
+    grid-template-columns: 600px 300px;
+
+}
+.dev-educations .dev-education{
+    height: 100vh;
+}
+.dev-educations .dev-competence{
+    /* background-color: #FFEF20; */
+    height: 100vh;
+}
+
+.dev-education-container{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+.dev-education-container .dev-education-skills{
+    flex: 1;
+}
+.dev-education-container .dev-education-skills .education-title{
+    border-bottom: 2px solid #FFEF20;
+    display: block;
+    width: 102px;
+    
+}
+.dev-education-container .dev-education-experience{
+    flex: 1;
+
+}
+/* *************************1******* */
+.dev-education-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dev-education-skills .education-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dev-education-skills .education-title{
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.dev-education-skills .education-years-container{
+    font-size: 18px;
+    display: flex;
+}
+.education-years-container .education-years{
+    background-color: #7FCA00;
+    color: #ffff;
+    display: block;
+    padding: 3px 5px 3px 35px;
+}
+
+.courses-block{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.courses-block .specialization-title{
+    font-size: 20px;
+}
+.courses-block .university{
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 10px;
+}
+.courses-block .courses-preview{
+    font-size: 16px;
+    color: gray;
+    width: 70%;  
+}
+
+
+/* ****************************2*************** */
+
+.dev-education-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dev-education-experience .experience-title{
+    font-size: 22px;
+    border-bottom: 2px solid #FFEF20;
+    width: 115px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.experience-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.experience-years-container .experience-years{
+    background-color: #7FCA00;
+    display: block;
+    color: #ffff;
+    width: 144px;
+    padding: 4px 0px 4px 30px;
+    color: #fff;
+}
+.experience-container .experience-block{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.experience-container .experience-block .skills-title{
+    font-size: 20px;
+}
+.experience-container .experience-block .agency{
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 10px;
+}
+.experience-container .experience-block .agency-preview{
+    font-size: 16px;
+    color: gray;
+    width: 70%;
+    
+}
+
+/* **********************3********** */
+
+.dev-competence .dev-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.dev-competence .dev-skills .design-skills{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 20px;
+}
+.dev-competence .dev-skills .coding-skills{
+    /* background-color: rgb(255, 217, 0); */
+    flex: 20px;
+}
+
+.design-skills .skills-title{
+    /* background-color: brown; */
+    font-size: 22px;
+    border-bottom: 2px solid #FFEF20;
+    font-weight: bold;
+    /* width: 107px; */
+    /* margin-bottom: 20px; */
+    width: 140px;
+}
+.coding-skills .skills-title{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 140px;
+}
+
+.designer-container .design-title{
+    font-weight: bold;
+}
+
+.designer-container .progress-bar,
+.coding-skills .progress-bar {
+    height: 20px;
+    background-color: #FFEF20;
+}
+
+/* ************************CV************ */
+.grid-item-resume .grid-resume-container{
+    padding-bottom: 200px;
+}
+.grid-resume-container .download-cv-container{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.download-cv-container button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #FFEF20;
+}
